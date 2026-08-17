@@ -12,3 +12,9 @@ body{
     text-align: center;
     padding: 1.5em 0;
 }
+ul{
+   display:flex;
+    justify-content:center ;
+    gap:1.5em;
+    list-style-type:none;
+}
