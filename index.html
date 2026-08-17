@@ -54,7 +54,44 @@
 <p>
     Виберіть тип квитка та заповніть форму бронювання
 </p>
+<form action="/submit-ticket" method="post">
+    <label for="ticket-type">Тип квитка</label>
+    <select name="ticket-type" id="type" required> 
+        <option value="standart">Стандартний-500₴</option>
+        <option value="vip">VIP-1000₴</option>
+    </select>
+    <label for="name">Ваше імя</label>
+    <input type="text"id="name" name="name" placeholder="Введіть ваше імя" required>
+    <label for="email">EMAIL</label>
+    <input type="email" id="email"name='email' placeholder="example@mail.com"required>
+    <label for="phone">ТЕЛЕФОН</label>
+    <input type="tel" name="phone" id="phone" placeholder="+380999999999"required>
+    <button type="submit" >
+Забронювати
+    </button>
+</form>
+</section>
+<section id="contact">
+<h2>
+    Контакти
+</h2>
+<p>
+    звяжіться з нами якщо маете питання
+</p>
+<address>
+    <p>
+        Email: <a href="mailto:info@tickets.ue">info@tickets.ue</a>
+    </p>
+    <p>
+        ТЕЛЕФОН: <a href="tel:+380999999999">+380999999999</a>
+    </p>
+</address>
 </section>
     </main>
+    <footer>
+        <p>
+            &copy; 2026 Бронювання квитків. Усі права захищено.
+        </p>
+    </footer>
 </body>
 </html>
